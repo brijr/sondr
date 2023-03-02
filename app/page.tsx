@@ -34,19 +34,19 @@ export default function Home() {
 				<div className="container max-w-screen-xl lg:p-12 p-6 z-10">
 					<div className="lg:w-3/4 my-12 flex flex-col gap-12">
 						<h2 className="text-3xl">{content.about.headline}</h2>
-						<p>{content.about.p}</p>
+						<p className="text-2xl border-l-2 border-l-[#AE364C] pl-4">{content.about.p}</p>
 					</div>
 				</div>
 			</section>
 			{/* Service Section */}
 			<section
 				id="services"
-				className="bg-red-900 text-white flex justify-center rounded-xl m-4 lg:m-12 relative z-10 overflow-hidden"
+				className="bg-[#AE364C] text-white flex justify-center rounded-xl m-4 lg:m-12 relative z-10 overflow-hidden"
 			>
 				<div className="container max-w-screen-xl lg:p-12 p-6 z-10">
 					<div className=" my-12 flex flex-col gap-12">
-						<h2 className="text-3xl">{content.serviceSection.headline}</h2>
-						<p>{content.serviceSection.p}</p>
+						<h2 className="text-4xl">{content.serviceSection.headline}</h2>
+						<p className="text-2xl">{content.serviceSection.p}</p>
 						<div className="grid grid-cols-3 gap-8">
 							{content.serviceSection.services.map((service) => (
 								<div
