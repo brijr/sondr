@@ -35,7 +35,7 @@ export default function Nav() {
 						</a>
 					</div>
 
-					<nav aria-label="Site Nav" className="hidden gap-8 text-md font-medium z-20 md:flex">
+					<nav aria-label="Site Nav" className="hidden sticky top-0 gap-8 text-md font-medium z-20 md:flex">
 						{links.map((link) => (
 							<Link
 								key={link.name}

@@ -51,18 +51,17 @@ export default function Home() {
 							{content.serviceSection.services.map((service) => (
 								<div
 									key={service.name}
-									className="relative text-neutral-900 block bg-neutral-100 rounded-lg border-t-4 border-red-900 p-4 shadow-xl sm:p-6 lg:p-8"
+									className="relative text-neutral-900 block bg-neutral-100 rounded-lg border-t-4 border-amber-400 shadow-xl"
 								>
-									<div className="flex flex-col gap-6">
-										<img
-											className="h-32 w-full object-cover"
-											src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
-											alt={'Image of' + service.name}
-										/>
+									<img
+										className="h-32 w-full object-cover rounded-t-lg"
+										src={service.href}
+										alt={'Image of' + service.name}
+									/>
+									<div className="sm:p-6 p-4 lg:p-8">
 										<h3 className="text-xl font-semibold">{service.name}</h3>
+										<p className="mt-4 font-medium text-gray-500">{service.description}</p>
 									</div>
-
-									<p className="mt-4 font-medium text-gray-500">{service.description}</p>
 								</div>
 							))}
 						</div>
