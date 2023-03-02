@@ -1,0 +1,44 @@
+{
+  "headline": "Empowering healthcare through Digital Marketing",
+  "subheadline": "We are a team of digital marketing experts who help healthcare providers to grow their business online.",
+  "about": {
+    "headline": "About Sondr",
+    "p": "We are a team of digital marketing experts who help healthcare providers to grow their business online. With over 20+ years of experience in Healthcare and Marketing we bring the tools and experience to make your business successful."
+  },
+  "serviceSection": {
+    "headline": "Services",
+    "p": "We offer a wide range of services to help you grow your business online. We can help you with your website, social media, SEO, and more.",
+    "services": [
+      {
+        "name": "Website Design",
+        "description": "We can help you build a website that will help you grow your business online. We can help you with your website, social media, SEO, and more.",
+        "icon": "fa fa-globe"
+      },
+      {
+        "name": "Social Media",
+        "description": "We can help you build a website that will help you grow your business online. We can help you with your website, social media, SEO, and more.",
+        "icon": "fa fa-facebook"
+      },
+      {
+        "name": "SEO",
+        "description": "We can help you build a website that will help you grow your business online. We can help you with your website, social media, SEO, and more.",
+        "icon": "fa fa-search"
+      },
+      {
+        "name": "Content Marketing",
+        "description": "We can help you build a website that will help you grow your business online. We can help you with your website, social media, SEO, and more.",
+        "icon": "fa fa-file-text"
+      },
+      {
+        "name": "Email Marketing",
+        "description": "We can help you build a website that will help you grow your business online. We can help you with your website, social media, SEO, and more.",
+        "icon": "fa fa-envelope"
+      },
+      {
+        "name": "Pay Per Click",
+        "description": "We can help you build a website that will help you grow your business online. We can help you with your website, social media, SEO, and more.",
+        "icon": "fa fa-money"
+      }
+    ]
+  }
+}

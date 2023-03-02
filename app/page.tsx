@@ -1,91 +1,74 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Nav from '@/components/Nav';
+import Particles from '@/components/Particles';
 
-const inter = Inter({ subsets: ['latin'] })
+import Link from 'next/link';
+
+import content from '@/stores/content.json';
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	return (
+		<main>
+			<Nav />
+			{/* Hero Section */}
+			<section className="flex justify-center rounded-xl m-4 lg:m-12 relative overflow-hidden">
+				<div className="container max-w-screen-xl lg:p-12 p-6 text-white z-10">
+					<div className="lg:w-3/4 my-12 flex flex-col gap-12">
+						<h1 className="text-6xl">{content.headline}</h1>
+						<h3 className="text-2xl">{content.subheadline}</h3>
+						<Link
+							className="z-50 rounded-lg bg-amber-600 hover:bg-amber-400 text-white w-fit transition-all px-5 py-2 text-md font-medium "
+							href="/contact"
+						>
+							Get Started
+						</Link>
+					</div>
+				</div>
+				<div className="bg-[#762030] absolute w-full h-full top-0 -z-50 right-0"></div>
+				<Particles />
+			</section>
+			{/* About Section */}
+			<section
+				id="about"
+				className="flex justify-center rounded-xl m-4 lg:m-12 relative z-10 overflow-hidden"
+			>
+				<div className="container max-w-screen-xl lg:p-12 p-6 z-10">
+					<div className="lg:w-3/4 my-12 flex flex-col gap-12">
+						<h2 className="text-3xl">{content.about.headline}</h2>
+						<p>{content.about.p}</p>
+					</div>
+				</div>
+			</section>
+			{/* Service Section */}
+			<section
+				id="services"
+				className="bg-red-900 text-white flex justify-center rounded-xl m-4 lg:m-12 relative z-10 overflow-hidden"
+			>
+				<div className="container max-w-screen-xl lg:p-12 p-6 z-10">
+					<div className=" my-12 flex flex-col gap-12">
+						<h2 className="text-3xl">{content.serviceSection.headline}</h2>
+						<p>{content.serviceSection.p}</p>
+						<div className="grid grid-cols-3 gap-8">
+							{content.serviceSection.services.map((service) => (
+								<div
+									key={service.name}
+									className="relative text-neutral-900 block bg-neutral-100 rounded-lg border-t-4 border-red-900 p-4 shadow-xl sm:p-6 lg:p-8"
+								>
+									<div className="flex flex-col gap-6">
+										<img
+											className="h-32 w-full object-cover"
+											src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
+											alt={'Image of' + service.name}
+										/>
+										<h3 className="text-xl font-semibold">{service.name}</h3>
+									</div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+									<p className="mt-4 font-medium text-gray-500">{service.description}</p>
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	);
 }
