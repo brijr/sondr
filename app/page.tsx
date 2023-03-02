@@ -73,7 +73,7 @@ export default function Home() {
 			</section>
 			<footer aria-label="Site Footer" className="bg-gray-100">
 				<div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
-					<div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-8 lg:right-8">
+					<div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-24 lg:right-8">
 						<a
 							className="inline-block rounded-full bg-red-900 p-2 text-white shadow transition hover:bg-red-700 sm:p-3 lg:p-4"
 							href="#"
@@ -97,11 +97,11 @@ export default function Home() {
 
 					<div className="lg:flex lg:items-end lg:justify-between">
 						<div>
-							<div className="flex justify-center w-64 lg:justify-start">
+							<div className="flex justify-center w-56 lg:justify-start">
 								<Image src={LogoCrimson} alt="Sondr Logo"></Image>
 							</div>
 
-							<p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
+							<p className="mx-auto mt-12 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
 								{content.subheadline}
 							</p>
 						</div>
@@ -109,7 +109,7 @@ export default function Home() {
 					</div>
 
 					<p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-						Copyright &copy; 2022. All rights reserved.
+						Copyright &copy; Sondr 2020-Present. All rights reserved.
 					</p>
 				</div>
 			</footer>
