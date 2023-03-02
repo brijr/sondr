@@ -37,13 +37,13 @@ export default function Nav() {
 
 					<nav aria-label="Site Nav" className="hidden sticky top-0 gap-8 text-md font-medium z-20 md:flex">
 						{links.map((link) => (
-							<Link
+							<a
 								key={link.name}
 								className="text-zinc-700 hover:border-t-2 hover:border-red-900 hover:-mb-2 p-1 transition-all"
 								href={link.href}
 							>
 								{link.name}
-							</Link>
+							</a>
 						))}
 					</nav>
 
