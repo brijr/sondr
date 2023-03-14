@@ -29,7 +29,7 @@ export default function Nav() {
 					<div className="flex lg:w-0 lg:flex-1">
 						<a href="#">
 							<span className="sr-only">Sondr | Digital Marketing for Healthcare</span>
-							<span className="inline-block w-32 pt-2 lg:pt-0">
+							<span className="inline-block w-32 pt-2">
 								<Image src={LogoCrimson} alt="Sondr Logo"></Image>
 							</span>
 						</a>
