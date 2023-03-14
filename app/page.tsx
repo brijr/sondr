@@ -7,6 +7,8 @@ import Image from 'next/image';
 import LogoCrimson from '@/public/sondr_logo_crimson.svg';
 
 import content from '@/stores/content.json';
+import ContactUs from '@/components/Form';
+import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
 	return (
@@ -29,6 +31,7 @@ export default function Home() {
 				<div className="bg-[#762030] absolute w-full h-full top-0 -z-50 right-0"></div>
 				<Particles />
 			</section>
+
 			{/* About Section */}
 			<section
 				id="about"
@@ -37,10 +40,15 @@ export default function Home() {
 				<div className="container max-w-screen-xl lg:p-12 p-6 z-10">
 					<div className="lg:w-3/4 my-12 flex flex-col gap-12">
 						<h2 className="text-3xl">{content.about.headline}</h2>
-						<p className="text-2xl border-l-2 border-l-[#AE364C] pl-4">{content.about.p}</p>
+						<p className="text-2xl border-l-2 border-l-[#AE364C] pl-4">{content.about.p}.</p>
+						<p className="text-2xl">
+							Created by <a href="https://codytower.com">Cody Tower</a> and{' '}
+							<a href="https://btower.dev">Bridger Tower</a>
+						</p>
 					</div>
 				</div>
 			</section>
+
 			{/* Service Section */}
 			<section
 				id="services"
@@ -71,6 +79,30 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			{/* Testimonials Section */}
+			<section
+				id="community"
+				className="flex justify-center rounded-xl m-4 lg:m-12 relative z-10 overflow-hidden"
+			>
+				<div className="container max-w-screen-xl lg:p-12 p-6 z-10">
+					<Testimonials />
+				</div>
+			</section>
+
+			{/* Contact Section */}
+			<section
+				id="contact"
+				className="flex justify-center rounded-xl m-4 lg:m-12 relative z-10 overflow-hidden"
+			>
+				<div className="container max-w-screen-xl lg:p-12 p-6 z-10">
+					<h2 className="text-3xl">{content.contact.headline}</h2>
+					<p className="text-2xl border-l-2 border-l-[#AE364C] pl-4 my-8">{content.contact.p}</p>
+					<ContactUs />
+				</div>
+			</section>
+
+			{/* footer */}
 			<footer aria-label="Site Footer" className="bg-gray-100">
 				<div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
 					<div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-24 lg:right-8">
@@ -105,7 +137,6 @@ export default function Home() {
 								{content.subheadline}
 							</p>
 						</div>
-
 					</div>
 
 					<p className="mt-12 text-center text-sm text-gray-500 lg:text-right">

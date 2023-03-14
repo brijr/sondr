@@ -13,12 +13,12 @@ const links = [
 	},
 	{
 		name: 'Contact',
-		href: '/contact'
+		href: '#contact'
 	},
-	{
-		name: 'Blog',
-		href: '/blog'
-	}
+	// {
+	// 	name: 'Blog',
+	// 	href: '/blog'
+	// }
 ];
 
 export default function Nav() {
