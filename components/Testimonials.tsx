@@ -18,7 +18,7 @@ const testimonials = [
 			'Bridger is a brilliant developer with a talented eye for all things design! I was lucky enough to work with him during our time at Tackle on many projects and his level of dedication to our website and brand assets was bar none. Bridger is genuinely a wonderful person all-around and any team should consider themselves very lucky to have Bridger on their side!',
 		name: 'Thao Littler',
 		title: 'Sr. Customer Advocacy Manager',
-		href: 'https://media.licdn.com/dms/image/D5603AQH7d-z7eBbXgQ/profile-displayphoto-shrink_100_100/0/1674774701043?e=1682553600&v=beta&t=0MrF4XDWGrch6jcIL4JOxu3VXzTtir3o2ZHWGvEZCY4'
+		href: 'https://media.licdn.com/dms/image/C4E03AQGKTmZo-Po1Pg/profile-displayphoto-shrink_100_100/0/1517685695118?e=1682553600&v=beta&t=QaP9MQMb2HVtfX53Hqczcre89ATMptAzHQgVbT8Ai8Q'
 	},
 	{
 		quote:

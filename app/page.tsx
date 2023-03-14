@@ -18,8 +18,8 @@ export default function Home() {
 			<section className="flex justify-center rounded-xl m-4 lg:m-12 relative overflow-hidden">
 				<div className="container max-w-screen-xl lg:p-12 p-6 text-white z-10">
 					<div className="lg:w-3/4 my-12 flex flex-col gap-12">
-						<h1 className="text-6xl">{content.headline}</h1>
-						<h3 className="text-4xl font-light">{content.subheadline}</h3>
+						<h1 className="text-3xl lg:text-6xl">{content.headline}</h1>
+						<h3 className="text-xl lg:text-4xl font-light">{content.subheadline}</h3>
 						<Link
 							className="z-50 rounded-lg bg-amber-600 hover:bg-amber-400 text-white w-fit transition-all px-5 py-2 text-md font-medium "
 							href="/contact"
@@ -58,7 +58,7 @@ export default function Home() {
 					<div className=" my-12 flex flex-col gap-12">
 						<h2 className="text-4xl">{content.serviceSection.headline}</h2>
 						<p className="text-2xl">{content.serviceSection.p}</p>
-						<div className="grid grid-cols-3 gap-8">
+						<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 							{content.serviceSection.services.map((service) => (
 								<div
 									key={service.name}
@@ -103,7 +103,7 @@ export default function Home() {
 			</section>
 
 			{/* footer */}
-			<footer aria-label="Site Footer" className="bg-gray-100">
+			<footer aria-label="Site Footer" className="bg-gray-100 p-6 lg:p-0">
 				<div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
 					<div className="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-24 lg:right-8">
 						<a
@@ -133,13 +133,13 @@ export default function Home() {
 								<Image src={LogoCrimson} alt="Sondr Logo"></Image>
 							</div>
 
-							<p className="mx-auto mt-12 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
+							<p className="mx-auto mt-12 max-w-md leading-relaxed text-gray-500 text-left">
 								{content.subheadline}
 							</p>
 						</div>
 					</div>
 
-					<p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
+					<p className="mt-12 text-left text-sm text-gray-500 lg:text-right">
 						Copyright &copy; Sondr 2020-Present. All rights reserved.
 					</p>
 				</div>
