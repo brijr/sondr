@@ -18,7 +18,7 @@ export default function Home() {
 			<section className="flex justify-center rounded-xl m-4 lg:m-12 relative overflow-hidden">
 				<div className="container max-w-screen-xl lg:p-12 p-6 text-white z-10">
 					<div className="lg:w-3/4 my-12 flex flex-col gap-12">
-						<h1 className="text-3xl lg:text-6xl">{content.headline}</h1>
+						<h1 className="text-4xl lg:text-6xl">{content.headline}</h1>
 						<h3 className="text-xl lg:text-4xl font-light">{content.subheadline}</h3>
 						<Link
 							className="z-50 rounded-lg bg-amber-600 hover:bg-amber-400 text-white w-fit transition-all px-5 py-2 text-md font-medium "
