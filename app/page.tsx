@@ -41,10 +41,6 @@ export default function Home() {
 					<div className="lg:w-3/4 my-12 flex flex-col gap-12">
 						<h2 className="text-3xl">{content.about.headline}</h2>
 						<p className="text-2xl border-l-2 border-l-[#AE364C] pl-4">{content.about.p}.</p>
-						<p className="text-2xl">
-							Created by <a href="https://codytower.com">Cody Tower</a> and{' '}
-							<a href="https://btower.dev">Bridger Tower</a>
-						</p>
 					</div>
 				</div>
 			</section>
