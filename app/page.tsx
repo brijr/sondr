@@ -136,7 +136,8 @@ export default function Home() {
 					</div>
 
 					<p className="mt-12 text-left text-sm text-gray-500 lg:text-right">
-						Copyright &copy; Sondr 2020-Present. All rights reserved.
+						Copyright &copy; Sondr 2020-Present. All rights reserved. Design and Code by{' '}
+						<a href="https://ziondesign.io">Zion</a>.
 					</p>
 				</div>
 			</footer>
