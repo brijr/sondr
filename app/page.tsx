@@ -22,7 +22,7 @@ export default function Home() {
 						<h3 className="text-xl lg:text-4xl font-light">{content.subheadline}</h3>
 						<Link
 							className="z-50 rounded-lg bg-amber-600 hover:bg-amber-400 text-white w-fit transition-all px-5 py-2 text-md font-medium "
-							href="/contact"
+							href="#contact"
 						>
 							Get Started
 						</Link>

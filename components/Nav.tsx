@@ -53,7 +53,7 @@ export default function Nav() {
 					<div className="lg:flex-1 items-center justify-end gap-4 sm:flex">
 						<Link
 							className="rounded-lg bg-amber-500 hover:bg-amber-400 transition-all px-5 py-2 text-md font-medium text-white"
-							href="/contact"
+							href="#contact"
 						>
 							Get Started
 						</Link>
